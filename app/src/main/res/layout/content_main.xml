@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/etFirstname"
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -20,7 +20,7 @@
 
     <!--</android.support.constraint.ConstraintLayout>-->
     <EditText
-            android:id="@+id/etFirstname"
+            android:id="@+id/etFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -43,7 +43,7 @@
             android:text="Last Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etFirstname" />
+            app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
 
     <EditText
             android:id="@+id/edemail"
@@ -96,12 +96,92 @@
             app:layout_constraintTop_toBottomOf="@+id/edpassword" />
 
     <Button
-            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Button"
+            android:text="SIGNUP"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etconfirm password"
             tools:text="SIGNUP" />
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="72dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="210dp"
+            android:layout_marginRight="210dp"
+            app:layout_constraintEnd_toEndOf="@+id/etFirstName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="87dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginRight="230dp"
+            app:layout_constraintEnd_toEndOf="@+id/etLastname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="43dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginRight="236dp"
+            app:layout_constraintEnd_toEndOf="@+id/edemail"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="244dp"
+            android:layout_marginRight="244dp"
+            app:layout_constraintEnd_toEndOf="@+id/edphone number"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="244dp"
+            android:layout_marginRight="244dp"
+            app:layout_constraintEnd_toEndOf="@+id/edpassword"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginRight="250dp"
+            app:layout_constraintEnd_toEndOf="@+id/etconfirm password"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
